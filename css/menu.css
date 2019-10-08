@@ -1,0 +1,39 @@
+.opt{
+    width: 350px;
+}
+    .opt.heading{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        font-weight: 700;
+    }
+    .heading a:hover{
+        color: blue;
+    }
+    .menu-head{
+        padding-left: 22px;
+    }
+    .menu-head i{
+        padding-top: 7px;
+    }
+
+    /* General Input Restore Backup File */
+    #restore_file{
+        display: none;
+    }
+.option-list{
+    /* width: 100%; */
+}
+.manage{
+    width: 750px;
+}
+    .day{
+        margin: 7px auto;
+    }
+    .taskValue{
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        background-color: rgba(0,0,0,0.2);
+        padding: 5px;
+    }
