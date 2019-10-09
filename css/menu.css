@@ -1,6 +1,4 @@
-.opt{
-    width: 350px;
-}
+
     .opt.heading{
         display: flex;
         justify-content: space-between;
@@ -21,11 +19,10 @@
     #restore_file{
         display: none;
     }
-.option-list{
-    /* width: 100%; */
-}
+
+
 .manage{
-    width: 750px;
+    width: 100%;
 }
     .day{
         margin: 7px auto;
@@ -45,4 +42,24 @@ input{
 .opt input, input:hover, input:focus{
     background-color: white;
     color: black;
+}
+
+@media screen and (max-width: 767px) {
+    .option-list{
+        width: 80%;
+        padding: 5px;
+    }
+    .manage{
+        padding-left: 10px;
+    }
+    .task{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+        .taskValue{
+            margin: 3px;
+            width: 100%;
+            overflow-x: scroll;
+        }
 }
