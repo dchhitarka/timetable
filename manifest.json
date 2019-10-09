@@ -8,7 +8,7 @@
             "sizes": "512x512"
         }
     ],
-    "start_url": "https://dchhitarka.github.io/timetable/",
+    "start_url": "/",
     "display": "standalone",
     "theme_color": "#000000",
     "background_color": "#EEE"
