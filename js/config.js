@@ -43,8 +43,8 @@ var config = {
 				day: "Tuesday",
 				schedule: [
                     {start: "07:50", end: "08:35", subject: "Physics", room: 321},
-					{start: "08:40", end: "09:25", subject: "Geography", room:304},
-					{start: "09:40", end: "10:25", subject: "German", room: 329},
+					{start: "08:40", end: "09:25", subject: "Geography", room:314},
+					{start: "09:40", end: "10:25", subject: "German", room: 327},
 					{start: "10:30", end: "11:15", subject: "History", room: 304},
 					{start: "11:30", end: "12:15", subject: "Biology", room: 113},
 					{start: "12:15", end: "13:00", subject: "Computer Science", room:312},

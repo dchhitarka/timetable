@@ -17,20 +17,22 @@
         <div class="nav-bar">
             <nav class="navbar">
                 <ul class="week">
-                    <li class="weekday">Mon</li>
-                    <li class="weekday">Tue</li>
-                    <li class="weekday">Wed</li>
-                    <li class="weekday">Thu</li>
-                    <li class="weekday">Fri</li>
-                    <li class="weekday">Sat</li>
+                    <li class="weekday mon" onclick="loadView('mon')">Mon</li>
+                    <li class="weekday tue" onclick="loadView('tue')">Tue</li>
+                    <li class="weekday wed" onclick="loadView('wed')">Wed</li>
+                    <li class="weekday thu" onclick="loadView('thu')">Thu</li>
+                    <li class="weekday fri" onclick="loadView('fri')">Fri</li>
+                    <li class="weekday sat" onclick="loadView('sat')">Sat</li>
                 </ul>
             </nav>
         </div>
     </header>
     <section class="schedule">
-
+        <div class="view-schedule">
+        </div>
     </section>
-
+    
+    <script src="js/config.js"></script>
     <script src="js/main.js" charset="utf-8"></script>
     <script src="https://kit.fontawesome.com/486392b9f0.js" crossorigin="anonymous"></script>
 </body>
