@@ -83,9 +83,9 @@ section{}
 
     .option-list{
         position: absolute;
-        margin: 5% auto;
         left: 50%;
-        transform: translateX(-50%);
+        top:  50%;
+        transform: translate(-50%, -50%);
     }
         .opt{
             margin: 2px;
@@ -93,14 +93,14 @@ section{}
             padding-left: 40px;
             font-size: 20px;
             font-weight: 600;
-            background-color: white;
+            background-color: blue;
             width: 350px;
             position: relative;
             cursor: pointer;
         }
         .opt:hover{
-            background-color: rgba(0,0,0,0.2);
-            border: 2px solid white;
+            background-color: black;
+            border: 2px solid blue;
             margin: 3px auto;
             transition: 0.4s;
             color: white;
@@ -113,15 +113,7 @@ section{}
             }
 
 .view-schedule{
-    /* margin: 15px; */
-    /* position: absolute; */
-    /* left: 50%; */
-    /* top: 50%; */
-    /* transform: translate(-50%, -70%); */
-    /* height: 100vh; */
     margin: 15px 20%;
-    /* margin-left: 20%; */
-    /* height: 350px; */
 }
     .class-list{
         list-style: none;
@@ -129,9 +121,14 @@ section{}
         margin: 5px;
         font-size: 18px;
         border: 1px solid blue;
-        border-radius: 5px;
+        border-radius: 7px;
+        background-color: blue;
         display: flex;
         justify-content: space-between;
+        transition: background-color 0.3s;
+    }
+    .class-list:hover{
+        background-color: black;
     }
         .class-value{
             padding: 3px 7px;

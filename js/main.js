@@ -3,6 +3,19 @@ window.onload = ()=>{
     let d = new Date();
     let dayToday = d.getDay();
     defaultView(dayToday);
+
+    // Service Worker
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('../sw.js').then(function(registration) {
+          // Registration was successful
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+          // registration failed :(
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      });
+    }
 }
 
 let viewSchedule = document.querySelector('.view-schedule');
