@@ -3,19 +3,6 @@ window.onload = ()=>{
     let d = new Date();
     let dayToday = d.getDay();
     defaultView(dayToday);
-
-    // Service Worker
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('../sw.js').then(function(registration) {
-          // Registration was successful
-          console.log('ServiceWorker registration successful with scope: ', registration.scope);
-        }, function(err) {
-          // registration failed :(
-          console.log('ServiceWorker registration failed: ', err);
-        });
-      });
-    }
 }
 
 let viewSchedule = document.querySelector('.view-schedule');
@@ -23,9 +10,10 @@ let dayArr = ['mon','tue','wed','thu','fri','sat'];
 
 const defaultView = (dayToday)=>{
     viewSchedule.innerHTML = '';
-    let dayView = config.data.timetable[dayToday];
+    let dayView = config.data.timetable[dayToday-1];
     let dayTab = document.querySelector(`.${dayArr[dayToday-1]}`);
     dayTab.classList.add('active');
+
     for(classObj of dayView.schedule){
         viewSchedule.innerHTML +=
             `<li class="class-list" style="color: white;">

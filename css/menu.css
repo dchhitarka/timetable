@@ -40,20 +40,8 @@
         color:  white;
     }   
     .heading{
-        position: relative;
-        font-size: 25px;
+        font-size: 22px;
     }
-        .fa-arrow-left{
-            position: absolute;
-            top: 25%;
-        }
-        .menu-head{
-            margin-left: 18px;
-        }
-        .save{
-            /* float: right; */
-            /* padding-right: 5px; */
-        }
         .taskValue{
             outline: none;
             background: none;
@@ -75,9 +63,6 @@
         flex-direction: column;
     }
     .heading{
-        display: flex;
-        justify-content: space-between;
-        /* font-size: 20px; */
-        flex-wrap: wrap;
+        flex-direction: row;
     }
 }
