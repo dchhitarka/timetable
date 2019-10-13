@@ -27,6 +27,21 @@ header{
 .active{
     border-bottom: 3px solid blue;
 }
+
+.showDisp{
+    color:  white;
+    background-color: blue;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    border-radius: 7px; 
+    transition: 0.5s;
+}
+.showDisp:hover{
+    color:  blue;
+    background-color: black;
+    border: 1px solid blue;
+}
 /* Top-Bar */
 .top-bar{
     display: flex;

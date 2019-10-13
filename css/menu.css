@@ -33,14 +33,32 @@
         padding: 5px;
         display: flex;
         justify-content: space-between;
+        color:  white;
     }
     .manage:hover{
         border:  1px solid blue;
         background-color: black;
         color:  white;
     }   
-    .heading{
+    .manage.heading{
         font-size: 22px;
+        align-items: center;
+    }
+        .heading i{
+            align-self: center;
+            padding-top: 7px;
+        }
+
+    #dayname{
+        background: none;
+        outline: none;
+        border: none;
+        color: white;
+        margin: 1px auto;
+        padding: 3px;
+        width: 100%;
+        font-weight: 600;
+        font-size: 18px;
     }
         .taskValue{
             outline: none;
@@ -55,9 +73,10 @@
 
 
 @media screen and (max-width: 767px) {
-    .option-list{
+    .manage-list{
         width: 80%;
         padding: 5px;
+        margin: 25px;
     }
     .manage{
         flex-direction: column;
