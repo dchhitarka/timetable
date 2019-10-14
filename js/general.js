@@ -1,6 +1,5 @@
 window.onload = ()=>{
     config.load_data();
-    console.log('Hi');
     backup();
     let input = document.getElementById("restore_file");
 	input.addEventListener("change", function() {
@@ -9,7 +8,6 @@ window.onload = ()=>{
 }
 
 function backup() {
-    console.log("Hello");
     var data_string = JSON.stringify(config.data);
     var data_uri = "data:application/json; charset=utf-8," + encodeURIComponent(data_string);
 
@@ -21,7 +19,6 @@ function backup() {
 }
 
 function restore() {
-    console.log("H");
     var input = document.getElementById("restore_file");
     var file = input.files[0];
     var x = 0;
@@ -31,10 +28,9 @@ function restore() {
     reader.onload = function(e) {
         try {
             var content = e.target.result;
-            var content_json = JSON.parse(content);
+            // var content_json = JSON.parse(content);
 
-            config.data = content_json;
-            config.save_data(config.data);
+            config.save_data(content);
 
             alert("Settings have been restored. Changes will take effect after page refresh.");
         }
